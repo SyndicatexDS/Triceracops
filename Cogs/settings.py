@@ -55,7 +55,7 @@ class SettingsCog(commands.Cog, name="settings command"):
         embed.add_field(name= f"**ALLOW SPAM** - ``({self.bot.command_prefix}allowspam <#channel> (remove))``", value= f"Channel where spam is allowed : **{allowSpam2[:-2]}**", inline=False)
         embed.add_field(name= f"**ANTI NUDITY** - ``({self.bot.command_prefix}antinudity <true/false>)``", value= f"Anti nudity image enabled : **{antiNudity}**", inline=False)
         embed.add_field(name= f"**ANTI PROFANITY** - ``({self.bot.command_prefix}antiprofanity <true/false>)``", value= f"Anti profanity enabled : **{antiProfanity}**", inline=False)
-        embed.set_footer(text="Bot Created by Darkempire#8245")
+        embed.set_footer(text="Bot Created by The Land of Ark#0001 ")
         return await ctx.channel.send(embed=embed)
 
 

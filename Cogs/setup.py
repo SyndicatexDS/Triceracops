@@ -78,7 +78,7 @@ class SetupCog(commands.Cog, name="setup command"):
                         await ctx.channel.send(embed = embed)
                     except Exception as error:
                         embed = discord.Embed(title=f"**ERROR**", description=f"An error was encountered during the set up of the captcha.\n\n**ERROR :** {error}", color=0xe00000) # Red
-                        embed.set_footer(text="Bot Created by Darkempire#8245")
+                        embed.set_footer(text="Bot Created by The Land of Ark#0001 ")
                         return await ctx.channel.send(embed=embed)
 
             
@@ -124,7 +124,7 @@ class SetupCog(commands.Cog, name="setup command"):
 
         else:
             embed = discord.Embed(title=f"**ERROR**", description=f"The setup argument must be on or off\nFollow the example : ``{self.bot.command_prefix}setup <on/off>``", color=0xe00000) # Red
-            embed.set_footer(text="Bot Created by Darkempire#8245")
+            embed.set_footer(text="Bot Created by The Land of Ark#0001 ")
             return await ctx.channel.send(embed=embed)
 
 # ------------------------ BOT ------------------------ #  

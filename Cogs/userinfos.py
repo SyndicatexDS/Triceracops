@@ -32,7 +32,7 @@ class UserInfosCog(commands.Cog, name="user infos command"):
             for guildMember in ctx.guild.members:
                 if guildMember == member:
                     embed.add_field(name="**Joined at :**", value=f"{guildMember.joined_at.year}-{guildMember.joined_at.month}-{guildMember.joined_at.day} {guildMember.joined_at.hour}:{guildMember.joined_at.minute}:{guildMember.joined_at.second}", inline=True)
-            embed.set_footer(text="Bot Created by Darkempire#8245")
+            embed.set_footer(text="Bot Created by The Land of Ark#0001 ")
             await ctx.channel.send(embed=embed)
         else:
             await ctx.channel.send("Member not found!")

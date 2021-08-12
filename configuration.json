@@ -6,8 +6,8 @@
     "allowSpam": [],
     "captcha": false,
     "captchaChannel": false,
-    "logChannel": 1,
-    "temporaryRole": 1,
+    "logChannel": 875488319197282324,
+    "temporaryRole": 875474017870544987,
     "roleGivenAfterCaptcha": false,
     "minAccountDate": 86400
 }
