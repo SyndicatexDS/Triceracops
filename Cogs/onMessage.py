@@ -63,10 +63,10 @@ class OnMessageCog(commands.Cog, name="on message"):
                             # Logs
                             i.filename = f"SPOILER_{i.filename}"
                             spoiler = await i.to_file()
-                            embed = discord.Embed(title = f"**{message.author} has sent a nudity image.**", description = f"In {message.channel.mention}.\n\n**__User informations :__**\n\n**Name :** {message.author}\n**Id :** {message.author.id}\n\n**The image :**", color = 0xff0000)
+                            embed = discord.Embed(title = f"**{message.author} has sent a nudity image.**", description = f"In {message.channel.mention}.\n\n**__User information :__**\n\n**Name :** {message.author}\n**Id :** {message.author.id}\n\n**The image :**", color = 0xff0000)
                             await sendLogMessage(self, event=message, channel=logChannel, embed=embed, messageFile=spoiler)
 
-                            # embed = discord.Embed(title = f"**{message.author} has sent a nudity image.**", description = f"In {message.channel.mention}.\n\n**__User informations :__**\n\n**Name :** {message.author}\n**Id :** {message.author.id}\n\n**The image :**", color = 0xff0000)
+                            # embed = discord.Embed(title = f"**{message.author} has sent a nudity image.**", description = f"In {message.channel.mention}.\n\n**__User information :__**\n\n**Name :** {message.author}\n**Id :** {message.author.id}\n\n**The image :**", color = 0xff0000)
                             # embed.set_image(url=i.url)
                             # await logChannel.send(embed = embed)
                             
@@ -93,7 +93,7 @@ class OnMessageCog(commands.Cog, name="on message"):
                 # Logs
                 if len(message.content) > 1600:
                     message.content = message.content + "..."
-                embed = discord.Embed(title = f"**{message.author} has sent a message with profanity.**", description = f"In {message.channel.mention}.\n\n**__User informations :__**\n\n**Name :** {message.author}\n**Id :** {message.author.id}\n\n**The message :**\n\n{message.content}", color = 0xff0000)
+                embed = discord.Embed(title = f"**{message.author} has sent a message with profanity.**", description = f"In {message.channel.mention}.\n\n**__User information :__**\n\n**Name :** {message.author}\n**Id :** {message.author.id}\n\n**The message :**\n\n{message.content}", color = 0xff0000)
                 await sendLogMessage(self, event=message, channel=logChannel, embed=embed)
 
         # Anti spam
@@ -133,7 +133,7 @@ class OnMessageCog(commands.Cog, name="on message"):
                         hastbin = await hastbin.json()
                         hastbinUrl = url + "/" + hastbin['key']
                 
-                embed = discord.Embed(title = f"**{message.author} has been kicked.**", description = f"**Reason :** He spammed in {message.channel.mention}.\n\n**__User informations :__**\n\n**Name :** {message.author}\n**Id :** {message.author.id}\n\n**Logs :** {hastbinUrl}", color = 0xff0000)
+                embed = discord.Embed(title = f"**{message.author} has been kicked.**", description = f"**Reason :** He spammed in {message.channel.mention}.\n\n**__User information :__**\n\n**Name :** {message.author}\n**Id :** {message.author.id}\n\n**Logs :** {hastbinUrl}", color = 0xff0000)
                 await sendLogMessage(self, event=message, channel=logChannel, embed=embed)
 
 # ------------------------ BOT ------------------------ #  

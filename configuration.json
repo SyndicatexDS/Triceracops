@@ -1,13 +1,13 @@
 {
     "token": "",
-    "antiProfanity": true,
-    "antiNudity": true,
-    "antiSpam": true,
+    "antiProfanity": false,
+    "antiNudity": false,
+    "antiSpam": false,
     "allowSpam": [],
-    "captcha": false,
-    "captchaChannel": false,
-    "logChannel": 875488319197282324,
+    "captcha": true,
+    "captchaChannel": 875356868757831700,
+    "logChannel": 875356868757831700,
     "temporaryRole": 875474017870544987,
-    "roleGivenAfterCaptcha": false,
+    "roleGivenAfterCaptcha": true,
     "minAccountDate": 86400
 }

@@ -25,7 +25,7 @@ class SetupCog(commands.Cog, name="setup command"):
         onOrOff = onOrOff.lower()
 
         if onOrOff == "on":
-            embed = discord.Embed(title = f"**ARE YOU SURE DO YOU WANT TO SET UP THE CAPTCHA PROTECTION ?**", description = f"**Set up the captcha protection includes the creation of :**\n\n- captcha verification channel\n- log channel\n- temporary role (before that the captcha was passed)\n\n**If you want to set up the captcha protection write \"__yes__\" else write \"__no__\".**", color = 0xff0000)
+            embed = discord.Embed(title = f"**Hi there Syndicate! Are you sure you want to enable my badass Captcha protection?**", description = f"**If you do I will make it happen!**\n\n- I will create a captcha verification channel\n- I will create a log channel\n- I will create add new users to the ☠️Anti Spam☠️ Role *(Temporary Role)*\n\n**If you want me to set this up for you please type \"__yes__\" if not please write no \"__no__\".**", color = 0xff0000)
             await ctx.channel.send(embed = embed)
             # Ask if user are sure
             def check(message):
@@ -38,7 +38,7 @@ class SetupCog(commands.Cog, name="setup command"):
                     await ctx.channel.send("The set up of the captcha protection was abandoned.")
                 else:
                     try:
-                        loading = await ctx.channel.send("Creation of captcha protection...")
+                        loading = await ctx.channel.send("Hacking The Land of Ark Servers and enabling Captcha protection...")
 
                         # Data
                         with open("configuration.json", "r") as config:
@@ -74,10 +74,10 @@ class SetupCog(commands.Cog, name="setup command"):
                             config.write(newdata)
                         
                         await loading.delete()
-                        embed = discord.Embed(title = f"**CAPTCHA WAS SET UP WITH SUCCESS**", description = f"The captcha was set up with success.", color = 0x2fa737) # Green
+                        embed = discord.Embed(title = f"**✅ CAPTCHA WAS SET UP WITH SUCCESS**", description = f"The captcha was set up with success.", color = 0x2fa737) # Green
                         await ctx.channel.send(embed = embed)
                     except Exception as error:
-                        embed = discord.Embed(title=f"**ERROR**", description=f"An error was encountered during the set up of the captcha.\n\n**ERROR :** {error}", color=0xe00000) # Red
+                        embed = discord.Embed(title=f"**ERROR**", description=f"❌ An error was encountered during the set up of the captcha.\n\n**ERROR :** {error}", color=0xe00000) # Red
                         embed.set_footer(text="Bot Created by The Land of Ark#0001 ")
                         return await ctx.channel.send(embed=embed)
 

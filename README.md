@@ -9,7 +9,7 @@
 Raid Protect is a Discord bot wich allow to protect your discord server efficiently.
 
 ## Captcha
-![](https://github.com/Darkempire78/Raid-Protect-Discord-Bot/blob/master/Capture1.PNG)
+![](http://www.thelandofark.com/Discord/blob/master/Capture1.PNG)
 
 ## Installation
 
@@ -39,7 +39,7 @@ Restrictions do not affect members with ADMINISTRATOR permission !
 
 ## Logs
 
-![](https://github.com/Darkempire78/Raid-Protect-Discord-Bot/blob/master/Capture2.PNG)
+![](http://www.thelandofark.com/Discord/blob/master/Capture2.PNG)
 
 ## Commands
 
@@ -83,7 +83,7 @@ Please make sure to update tests as appropriate.
 
 ## License
 
-This project is under [GPLv3](https://github.com/Darkempire78/Raid-Protect-Discord-Bot/blob/master/LICENSE).
+This project is under [GPLv3](http://www.thelandofark.com/Discord/blob/master/LICENSE).
 
 ## Stargazers
 [![Stargazers over time](https://starchart.cc/Darkempire78/Raid-Protect-Discord-Bot.svg)](https://starchart.cc/Darkempire78/Raid-Protect-Discord-Bot)

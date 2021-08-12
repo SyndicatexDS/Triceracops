@@ -47,7 +47,7 @@ class OnJoinCog(commands.Cog, name="on join"):
                 await member.send(embed = embed)
                 await member.kick() # Kick the user
                 # Logs
-                embed = discord.Embed(title = f"**{member} has been kicked.**", description = f"**Reason :** His account is more young that the server limit ({minAccountDate} hours)\nAccount creation : {member.created_at}\n\n**__User informations :__**\n\n**Name :** {member}\n**Id :** {member.id}", color = 0xff0000)
+                embed = discord.Embed(title = f"**{member} has been kicked.**", description = f"**Reason :** His account is more young that the server limit ({minAccountDate} hours)\nAccount creation : {member.created_at}\n\n**__User information :__**\n\n**Name :** {member}\n**Id :** {member.id}", color = 0xff0000)
                 embed.set_footer(text= f"at {member.joined_at}")
                 await sendLogMessage(self, event=member, channel=logChannel, embed=embed)
 
@@ -161,7 +161,7 @@ class OnJoinCog(commands.Cog, name="on join"):
                     await captchaEmbed.delete()
                     await msg.delete()
                     # Logs
-                    embed = discord.Embed(title = f"**{member} passed the captcha.**", description = f"**__User informations :__**\n\n**Name :** {member}\n**Id :** {member.id}", color = 0x2fa737)
+                    embed = discord.Embed(title = f"**{member} passed the captcha.**", description = f"**__User information :__**\n\n**Name :** {member}\n**Id :** {member.id}", color = 0x2fa737)
                     embed.set_footer(text= f"at {memberTime}")
                     await sendLogMessage(self, event=member, channel=logChannel, embed=embed)
 
@@ -176,7 +176,7 @@ class OnJoinCog(commands.Cog, name="on join"):
                     await captchaEmbed.delete()
                     await msg.delete()
                     # Logs
-                    embed = discord.Embed(title = f"**{member} has been kicked.**", description = f"**Reason :** He failed the captcha.\n\n**__User informations :__**\n\n**Name :** {member}\n**Id :** {member.id}", color = 0xff0000)
+                    embed = discord.Embed(title = f"**{member} has been kicked.**", description = f"**Reason :** He failed the captcha.\n\n**__User information :__**\n\n**Name :** {member}\n**Id :** {member.id}", color = 0xff0000)
                     embed.set_footer(text= f"at {memberTime}")
                     await sendLogMessage(self, event=member, channel=logChannel, embed=embed)
 
@@ -193,7 +193,7 @@ class OnJoinCog(commands.Cog, name="on join"):
                 time.sleep(3)
                 await captchaEmbed.delete()
                 # Logs
-                embed = discord.Embed(title = f"**{member} has been kicked.**", description = f"**Reason :** He exceeded the captcha response time (120s).\n\n**__User informations :__**\n\n**Name :** {member}\n**Id :** {member.id}", color = 0xff0000)
+                embed = discord.Embed(title = f"**{member} has been kicked.**", description = f"**Reason :** He exceeded the captcha response time (120s).\n\n**__User information :__**\n\n**Name :** {member}\n**Id :** {member.id}", color = 0xff0000)
                 embed.set_footer(text= f"at {memberTime}")
                 await sendLogMessage(self, event=member, channel=logChannel, embed=embed)
 
