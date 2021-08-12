@@ -17,6 +17,7 @@ Install all dependencies:
 
 ```bash
 pip install -r requirements.txt
+python main.py
 ```
 Then put your Discord token that can be found in the Discord's developers portal inside `configuration.json`.
 This bot have to use the "server members intent", so you have to enable it in the Discord's developers portal.
