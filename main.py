@@ -1,3 +1,4 @@
+import keep_alive
 import discord
 import os
 import json
