@@ -137,7 +137,7 @@ class OnJoinCog(commands.Cog, name="on join"):
                     return message.content
 
             try:
-                msg = await self.bot.wait_for('message', timeout=120.0, check=check)
+                msg = await self.bot.wait_for('message', timeout=900.0, check=check)
                 # Check the captcha
                 password = text.split(" ")
                 password = "".join(password)
@@ -169,23 +169,23 @@ class OnJoinCog(commands.Cog, name="on join"):
                     link = await captchaChannel.create_invite(max_age=172800) # Create an invite
                     embed = discord.Embed(description=f"{member.mention} failed the captcha.", color=0xca1616) # Red
                     await captchaChannel.send(embed = embed, delete_after = 5)
-                    embed = discord.Embed(title = f"**YOU HAVE BEEN KICKED FROM {member.guild.name}**", description = f"Reason : You failed the captcha.\nServer link : <{link}>", color = 0xff0000)
+                    embed = discord.Embed(title = f"**Were sorry to tell you that you have been kicked from {member.guild.name}**", description = f"Reason : You failed the captcha.\nServer link : <{link}>", color = 0xff0000)
                     await member.send(embed = embed)
                     await member.kick() # Kick the user
                     time.sleep(3)
                     await captchaEmbed.delete()
                     await msg.delete()
                     # Logs
-                    embed = discord.Embed(title = f"**{member} has been kicked.**", description = f"**Reason :** He failed the captcha.\n\n**__User informations :__**\n\n**Name :** {member}\n**Id :** {member.id}", color = 0xff0000)
+                    embed = discord.Embed(title = f"**{member} has been kicked.**", description = f"**Reason :** He/She failed the captcha.\n\n**__User informations :__**\n\n**Name :** {member}\n**Id :** {member.id}", color = 0xff0000)
                     embed.set_footer(text= f"at {memberTime}")
                     await sendLogMessage(self, event=member, channel=logChannel, embed=embed)
 
             except (asyncio.TimeoutError):
                 link = await captchaChannel.create_invite(max_age=172800) # Create an invite
-                embed = discord.Embed(title = f"**TIME IS OUT**", description = f"{member.mention} has exceeded the response time (120s).", color = 0xff0000)
+                embed = discord.Embed(title = f"**TIME IS OUT**", description = f"{member.mention} has exceeded the response time (15 Minutes).", color = 0xff0000)
                 await captchaChannel.send(embed = embed, delete_after = 5)
                 try:
-                    embed = discord.Embed(title = f"**YOU HAVE BEEN KICKED FROM {member.guild.name}**", description = f"Reason : You exceeded the captcha response time (120s).\nServer link : <{link}>", color = 0xff0000)
+                    embed = discord.Embed(title = f"**YOU HAVE BEEN KICKED FROM {member.guild.name}**", description = f"Reason : You exceeded the captcha response time (15 Minutes).\nServer link : <{link}>", color = 0xff0000)
                     await member.send(embed = embed)
                     await member.kick() # Kick the user
                 except Exception as error:
@@ -193,7 +193,7 @@ class OnJoinCog(commands.Cog, name="on join"):
                 time.sleep(3)
                 await captchaEmbed.delete()
                 # Logs
-                embed = discord.Embed(title = f"**{member} has been kicked.**", description = f"**Reason :** He exceeded the captcha response time (120s).\n\n**__User informations :__**\n\n**Name :** {member}\n**Id :** {member.id}", color = 0xff0000)
+                embed = discord.Embed(title = f"**{member} has been kicked.**", description = f"**Reason :** He/She exceeded the captcha response time (15 Minutes).\n\n**__User informations :__**\n\n**Name :** {member}\n**Id :** {member.id}", color = 0xff0000)
                 embed.set_footer(text= f"at {memberTime}")
                 await sendLogMessage(self, event=member, channel=logChannel, embed=embed)
 

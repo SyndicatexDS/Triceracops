@@ -1,46 +1,19 @@
-![](https://img.shields.io/codefactor/grade/github/Darkempire78/Raid-Protect-Discord-Bot?style=for-the-badge) 
-![](https://img.shields.io/github/repo-size/Darkempire78/Raid-Protect-Discord-Bot?style=for-the-badge) 
-![](https://img.shields.io/badge/SOURCERY-ENABLED-green?style=for-the-badge) <a href="http://www.thelandofark.com/Discord"><img src="https://img.shields.io/discord/831524351311609907?color=%237289DA&label=DISCORD&style=for-the-badge"></a>
-
-[:jp: **Japan Version** (not updated)](https://github.com/Alpaca131/Raid-Protect-Discord-Bot-JP_translated)
-
-# Raid Protect Discord Bot
-
-Raid Protect is a Discord bot wich allow to protect your discord server efficiently.
-
-## Captcha
-![](http://www.thelandofark.com/Discord/blob/master/Capture1.PNG)
-
-## Installation
-
-Install all dependencies:
-
-```bash
-pip install -r requirements.txt
-python main.py
-```
-Then put your Discord token that can be found in the Discord's developers portal inside `configuration.json`.
-This bot have to use the "server members intent", so you have to enable it in the Discord's developers portal.
-
-Finally, host the bot and invite it to your own server.
+## Triceracops Raid Protection Bot by The Land of Ark.
+Triceracops Raid Protection Bot allows you to protect your discord server efficiently.
 
 ## Features
+The Triceracops Raid Protection Bot comes with the following functions.
 
-This Discord Bot protect your Discord server with many functions.
-
-* Captcha firewall
-* Minimum account age required
-* Anti nudity image
-* Anti profanity
-* Anti spam
+* Captcha Firewall
+* Minimum account age requirement
+* Anti Nudity
+* Anti Profanity
+* Anti Spam
 * Logs
-* basic moderation commands
+* Basic moderation commands
 
-Restrictions do not affect members with ADMINISTRATOR permission !
+**__Restrictions don't affect members with ADMINISTRATOR permissions!__**
 
-## Logs
-
-![](http://www.thelandofark.com/Discord/blob/master/Capture2.PNG)
 
 ## Commands
 
@@ -54,44 +27,8 @@ Restrictions do not affect members with ADMINISTRATOR permission !
 *antispam <true/false> : Enable or disable the spam protection.
 *allowspam <#channel> (False) : Enable or disable the spam protection in a specific channel.
 *lock | unlock <#channel> : Lock/Unlock a specific channel.
-
 *userinfos <@user/ID> : Get user infomations.
-
 *ban <@user/ID> : Ban the user.
 *kick <@user/ID> : Kick the user.
-
 *help : This will Display more information..
 ```
-
-## Potential errors
-
-### ImportError: cannot import name 'joblib' form 'sklearn.externals'
-You have to download the last version of profanity_check.
-Unstall you current version and download the v1.0.6 with `git+https://github.com/dimitrismistriotis/profanity-check` 
-
-## Discord
-
-Join the Discord server !
-
-[![](https://i.imgur.com/UfyvtOL.png)](https://discord.gg/sPvJmY7mcV)
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-
-## License
-
-This project is under [GPLv3](http://www.thelandofark.com/Discord/blob/master/LICENSE).
-
-## Stargazers
-[![Stargazers over time](https://starchart.cc/Darkempire78/Raid-Protect-Discord-Bot.svg)](https://starchart.cc/Darkempire78/Raid-Protect-Discord-Bot)
-
-# Advice :
-
-You should use [Discord Tools](https://marketplace.visualstudio.com/items?itemName=Darkempire78.discord-tools) to code your Discord bots on Visual Studio Code easier.
-Works for Python (Discord.py), Javascript (Discord.js, Eris) and Java (JDA). Generate template bot and code (snippets).
-- **Download :** https://marketplace.visualstudio.com/items?itemName=Darkempire78.discord-tools
-- **Repository :** https://github.com/Darkempire78/Discord-Tools

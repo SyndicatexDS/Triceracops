@@ -12,8 +12,8 @@ class Greetings(commands.Cog):
 intents = discord.Intents.default()
 intents.members = True
 
-bot = commands.Bot("?", intents = intents)
-# bot = commands.when_mentioned_or("?")
+bot = commands.Bot("*", intents = intents)
+# bot = commands.when_mentioned_or("*")
 
 # HELP
 bot.remove_command("help") # To create a personal help command 
