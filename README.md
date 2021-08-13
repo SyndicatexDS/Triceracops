@@ -1,6 +1,6 @@
 ![](https://img.shields.io/codefactor/grade/github/Darkempire78/Raid-Protect-Discord-Bot?style=for-the-badge) 
 ![](https://img.shields.io/github/repo-size/Darkempire78/Raid-Protect-Discord-Bot?style=for-the-badge) 
-![](https://img.shields.io/badge/SOURCERY-ENABLED-green?style=for-the-badge) <a href="https://discord.com/invite/sPvJmY7mcV"><img src="https://img.shields.io/discord/831524351311609907?color=%237289DA&label=DISCORD&style=for-the-badge"></a>
+![](https://img.shields.io/badge/SOURCERY-ENABLED-green?style=for-the-badge) <a href="http://www.thelandofark.com/Discord"><img src="https://img.shields.io/discord/831524351311609907?color=%237289DA&label=DISCORD&style=for-the-badge"></a>
 
 [:jp: **Japan Version** (not updated)](https://github.com/Alpaca131/Raid-Protect-Discord-Bot-JP_translated)
 
@@ -45,22 +45,22 @@ Restrictions do not affect members with ADMINISTRATOR permission !
 ## Commands
 
 ```
-?setup <on/off> : Set up the captcha protection.
-?settings : Display the list of settings.
-?giveroleaftercaptcha <role ID/off> : Give a role after that the user passed the captcha.
-?minaccountage <number (hours)> : set a minimum age to join the server (24 hours by default).
-?antinudity <true/false> : Enable or disable the nudity image protection.
-?antiprofanity <true/false> : Enable or disable the profanity protection.
-?antispam <true/false> : Enable or disable the spam protection.
-?allowspam <#channel> (False) : Enable or disable the spam protection in a specific channel.
-?lock | unlock <#channel> : Lock/Unlock a specific channel.
+*setup <on/off> : Set up the captcha protection.
+*settings : Display the list of settings.
+*giveroleaftercaptcha <role ID/off> : Give a role after that the user passed the captcha.
+*minaccountage <number (hours)> : set a minimum age to join the server (24 hours by default).
+*antinudity <true/false> : Enable or disable the nudity image protection.
+*antiprofanity <true/false> : Enable or disable the profanity protection.
+*antispam <true/false> : Enable or disable the spam protection.
+*allowspam <#channel> (False) : Enable or disable the spam protection in a specific channel.
+*lock | unlock <#channel> : Lock/Unlock a specific channel.
 
-?userinfos <@user/ID> : Get user infomations.
+*userinfos <@user/ID> : Get user infomations.
 
-?ban <@user/ID> : Ban the user.
-?kick <@user/ID> : Kick the user.
+*ban <@user/ID> : Ban the user.
+*kick <@user/ID> : Kick the user.
 
-?help : display help.
+*help : This will Display more information..
 ```
 
 ## Potential errors
